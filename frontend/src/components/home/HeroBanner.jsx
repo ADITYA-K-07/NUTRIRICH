@@ -4,6 +4,7 @@ import products from "../../data/products.json";
 import { heroSlides } from "../../data/siteContent";
 import { formatPrice } from "../../utils/formatPrice";
 import { getDefaultVariant, getDiscountPercent } from "../../utils/productUtils";
+import AssetImage from "../ui/AssetImage";
 
 export default function HeroBanner() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,6 +26,7 @@ export default function HeroBanner() {
   const product = products.find((item) => item.id === slide.productId);
   const variant = getDefaultVariant(product);
   const discount = getDiscountPercent(variant.price, variant.mrp);
+  const heroImage = `/hero/slide${activeIndex + 1}-product.jpg`;
   const metrics = [
     { value: "4.6", label: "Gym rating" },
     { value: `${products.length}+`, label: "Curated products" },
@@ -85,9 +87,23 @@ export default function HeroBanner() {
               <span>{product.brand}</span>
               <strong>{discount}% off</strong>
             </div>
-            <div className="hero-canister">
-              <span>{product.category.split("-").join(" ")}</span>
-              <strong>{product.visualLabel}</strong>
+            <div className="hero-media-shell">
+              <AssetImage
+                src={heroImage}
+                fallbackSrc={product.images?.[0]}
+                alt={product.name}
+                className="hero-product-image"
+                fallback={
+                  <div className="hero-canister">
+                    <span>{product.category.split("-").join(" ")}</span>
+                    <strong>{product.visualLabel}</strong>
+                  </div>
+                }
+              />
+              <div className="hero-image-overlay">
+                <span>{product.category.split("-").join(" ")}</span>
+                <strong>{product.visualLabel}</strong>
+              </div>
             </div>
             <div className="hero-product-meta">
               <h2>{product.name}</h2>

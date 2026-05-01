@@ -4,6 +4,7 @@ import ProductGrid from "../components/shop/ProductGrid";
 import Badge from "../components/ui/Badge";
 import Button from "../components/ui/Button";
 import StarRating from "../components/ui/StarRating";
+import AssetImage from "../components/ui/AssetImage";
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishlistContext";
 import products from "../data/products.json";
@@ -51,9 +52,22 @@ export default function ProductDetail() {
               <Badge key={badge}>{badge}</Badge>
             ))}
           </div>
-          <div className="product-detail-canister">
-            <span>{product.brand}</span>
-            <strong>{product.visualLabel}</strong>
+          <div className="product-detail-media-shell">
+            <AssetImage
+              src={product.images?.[variantIndex] || product.images?.[0]}
+              alt={product.name}
+              className="product-detail-image"
+              fallback={
+                <div className="product-detail-canister">
+                  <span>{product.brand}</span>
+                  <strong>{product.visualLabel}</strong>
+                </div>
+              }
+            />
+            <div className="product-detail-image-badge">
+              <span>{product.brand}</span>
+              <strong>{product.visualLabel}</strong>
+            </div>
           </div>
           <button
             type="button"

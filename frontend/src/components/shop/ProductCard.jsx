@@ -11,6 +11,7 @@ import {
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import StarRating from "../ui/StarRating";
+import AssetImage from "../ui/AssetImage";
 
 export default function ProductCard({ product }) {
   const { addItem } = useCart();
@@ -44,9 +45,22 @@ export default function ProductCard({ product }) {
             <Badge key={badge}>{badge}</Badge>
           ))}
         </div>
-        <div className="product-canister">
-          <span>{product.brand}</span>
-          <strong>{product.visualLabel}</strong>
+        <div className="product-media-shell">
+          <AssetImage
+            src={product.images?.[0]}
+            alt={product.name}
+            className="product-card-image"
+            fallback={
+              <div className="product-canister product-card-fallback">
+                <span>{product.brand}</span>
+                <strong>{product.visualLabel}</strong>
+              </div>
+            }
+          />
+          <div className="product-image-overlay">
+            <span>{product.brand}</span>
+            <strong>{product.visualLabel}</strong>
+          </div>
         </div>
       </div>
 

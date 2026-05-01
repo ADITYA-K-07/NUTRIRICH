@@ -6,6 +6,7 @@ import {
   gymMembershipPlans
 } from "../data/siteContent";
 import { isApiConfigured, submitEnquiry } from "../services/api";
+import AssetImage from "../components/ui/AssetImage";
 
 const initialEnquiry = {
   name: "",
@@ -57,18 +58,36 @@ export default function Gym() {
     <section className="page-shell">
       <div className="gym-hero">
         <div className="shell">
-          <span className="section-kicker section-kicker-light">
-            Fitness Fort
-          </span>
-          <h1>Part of the NUTRIRICH family</h1>
-          <p>
-            A community-first gym in Bibvewadi, Pune with strength, conditioning,
-            and guided support for everyday members.
-          </p>
-          <div className="gym-meta">
-            <span>Bibvewadi, Pune</span>
-            <span>4.6 rating</span>
-            <span>Open till 10 PM</span>
+          <div className="gym-hero-layout">
+            <div className="gym-hero-copy">
+              <span className="section-kicker section-kicker-light">
+                Fitness Fort
+              </span>
+              <h1>Part of the NUTRIRICH family</h1>
+              <p>
+                A community-first gym in Bibvewadi, Pune with strength, conditioning,
+                and guided support for everyday members.
+              </p>
+              <div className="gym-meta">
+                <span>Bibvewadi, Pune</span>
+                <span>4.6 rating</span>
+                <span>Open till 10 PM</span>
+              </div>
+            </div>
+
+            <div className="gym-hero-media-shell">
+              <AssetImage
+                src="/gym/fitness-fort-hero.jpg"
+                alt="Fitness Fort gym"
+                className="gym-hero-image"
+                fallback={
+                  <div className="gym-hero-fallback">
+                    <span>Fitness Fort</span>
+                    <strong>Strength. Conditioning. Community.</strong>
+                  </div>
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -123,9 +142,22 @@ export default function Gym() {
           <div className="gym-gallery">
             {gymGallery.map((item, index) => (
               <article key={item} className="gallery-card">
-                <span>0{index + 1}</span>
-                <strong>{item}</strong>
-                <p>Placeholder panel ready for final photography assets.</p>
+                <AssetImage
+                  src={`/gym/gym-photo-${index + 1}.jpg`}
+                  alt={item}
+                  className="gallery-image"
+                  fallback={
+                    <div className="gallery-image-fallback">
+                      <span>0{index + 1}</span>
+                      <strong>{item}</strong>
+                    </div>
+                  }
+                />
+                <div className="gallery-copy">
+                  <span>0{index + 1}</span>
+                  <strong>{item}</strong>
+                  <p>Fitness Fort training environment.</p>
+                </div>
               </article>
             ))}
           </div>
