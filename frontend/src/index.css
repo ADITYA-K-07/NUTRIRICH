@@ -324,8 +324,7 @@ main {
   border: 1px solid transparent;
 }
 
-.nav-pill,
-.menu-toggle {
+.nav-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -345,11 +344,56 @@ main {
 }
 
 .menu-toggle {
-  display: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--line-strong);
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all 200ms ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 .navbar-links {
   border-top: 1px solid var(--line);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+
+.navbar-links.open {
+  max-height: 800px;
 }
 
 .navbar-links-inner {
@@ -2040,24 +2084,26 @@ main {
 }
 
 @media (max-width: 920px) {
-  .menu-toggle {
-    display: inline-flex;
-  }
-
   .experience-switch {
     order: 3;
   }
 
   .navbar-links {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--line);
   }
 
   .navbar-links.open {
-    display: block;
+    max-height: 800px;
   }
 
   .navbar-links-inner {
     gap: 14px;
+    padding: 16px 0;
   }
 
   .nav-link-row {
