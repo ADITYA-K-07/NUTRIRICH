@@ -1,0 +1,210 @@
+[
+  {
+    "id": "biozyme-whey-1kg",
+    "name": "Biozyme Performance Whey Protein",
+    "brand": "MuscleBlaze",
+    "category": "whey-protein",
+    "goal": ["muscle-gain", "recovery"],
+    "cardBgColor": "#1A1A1A",
+    "cardTextColor": "#FF8A00",
+    "visualLabel": "27g Protein",
+    "badges": ["LAB TESTED", "BEST SELLER"],
+    "images": ["/products/biozyme-whey-main.jpg"],
+    "variants": [
+      { "flavour": "Rich Chocolate", "size": "1kg", "price": 2499, "mrp": 3199, "stock": 50 },
+      { "flavour": "Cookies and Cream", "size": "1kg", "price": 2549, "mrp": 3199, "stock": 22 },
+      { "flavour": "Rich Chocolate", "size": "2kg", "price": 4499, "mrp": 5999, "stock": 18 }
+    ],
+    "rating": { "average": 4.7, "count": 1240 },
+    "description": "Fast-digesting whey isolate and concentrate blend for clean lean-muscle support.",
+    "highlights": ["27g protein per serving", "Zero fillers", "Improved absorption enzymes"],
+    "nutritionFacts": {
+      "servingSize": "33g",
+      "protein": "27g",
+      "carbs": "3.4g",
+      "fat": "1.9g",
+      "calories": "136 kcal"
+    }
+  },
+  {
+    "id": "on-gold-standard",
+    "name": "Gold Standard 100% Whey",
+    "brand": "Optimum Nutrition",
+    "category": "whey-protein",
+    "goal": ["muscle-gain"],
+    "cardBgColor": "#F6F3EA",
+    "cardTextColor": "#1A1A1A",
+    "visualLabel": "International Best Seller",
+    "badges": ["IMPORTED", "CLEAN BLEND"],
+    "images": ["/products/gold-standard-main.jpg"],
+    "variants": [
+      { "flavour": "Double Rich Chocolate", "size": "2lb", "price": 3499, "mrp": 4299, "stock": 24 },
+      { "flavour": "Vanilla Ice Cream", "size": "5lb", "price": 7799, "mrp": 8999, "stock": 10 }
+    ],
+    "rating": { "average": 4.8, "count": 842 },
+    "description": "Trusted whey protein with smooth mixability and dependable recovery support.",
+    "highlights": ["24g protein", "Low sugar", "Globally trusted formula"],
+    "nutritionFacts": {
+      "servingSize": "31g",
+      "protein": "24g",
+      "carbs": "3g",
+      "fat": "1g",
+      "calories": "120 kcal"
+    }
+  },
+  {
+    "id": "asitis-creatine",
+    "name": "Micronized Creatine Monohydrate",
+    "brand": "AS-IT-IS",
+    "category": "creatine",
+    "goal": ["strength", "endurance"],
+    "cardBgColor": "#EEF5FF",
+    "cardTextColor": "#004F92",
+    "visualLabel": "Strength Support",
+    "badges": ["UNFLAVOURED", "PURE"],
+    "images": ["/products/creatine-asitis-main.jpg"],
+    "variants": [
+      { "flavour": "Unflavoured", "size": "250g", "price": 699, "mrp": 899, "stock": 60 },
+      { "flavour": "Unflavoured", "size": "500g", "price": 1249, "mrp": 1599, "stock": 35 }
+    ],
+    "rating": { "average": 4.6, "count": 519 },
+    "description": "Micronized creatine to improve power output, volume, and training performance.",
+    "highlights": ["3g creatine", "Micronized texture", "Mixes fast"],
+    "nutritionFacts": {
+      "servingSize": "3g",
+      "protein": "0g",
+      "carbs": "0g",
+      "fat": "0g",
+      "calories": "0 kcal"
+    }
+  },
+  {
+    "id": "muscleblaze-mass-gainer",
+    "name": "Super Gainer XXL",
+    "brand": "MuscleBlaze",
+    "category": "mass-gainer",
+    "goal": ["weight-gain", "recovery"],
+    "cardBgColor": "#FFF5EC",
+    "cardTextColor": "#C84C09",
+    "visualLabel": "High Calorie",
+    "badges": ["VALUE PACK", "WEIGHT GAIN"],
+    "images": ["/products/mass-gainer-xxl-main.jpg"],
+    "variants": [
+      { "flavour": "Chocolate", "size": "1kg", "price": 1149, "mrp": 1499, "stock": 28 },
+      { "flavour": "Chocolate", "size": "3kg", "price": 2799, "mrp": 3499, "stock": 12 }
+    ],
+    "rating": { "average": 4.4, "count": 271 },
+    "description": "Calorie-dense formula for hard gainers aiming to add size and bodyweight.",
+    "highlights": ["High carbs", "Added digestive support", "Budget friendly"],
+    "nutritionFacts": {
+      "servingSize": "75g",
+      "protein": "15g",
+      "carbs": "54g",
+      "fat": "2.7g",
+      "calories": "308 kcal"
+    }
+  },
+  {
+    "id": "avvatar-isorich",
+    "name": "Avvatar Isorich Protein",
+    "brand": "Avvatar",
+    "category": "whey-protein",
+    "goal": ["muscle-gain", "fat-loss"],
+    "cardBgColor": "#F1FBF3",
+    "cardTextColor": "#1A5C3A",
+    "visualLabel": "Low Carb Isolate",
+    "badges": ["NEW ARRIVAL", "LEAN CUT"],
+    "images": ["/products/avvatar-main.jpg"],
+    "variants": [
+      { "flavour": "Malai Kulfi", "size": "1kg", "price": 2899, "mrp": 3599, "stock": 20 },
+      { "flavour": "Belgian Chocolate", "size": "2kg", "price": 5299, "mrp": 6499, "stock": 10 }
+    ],
+    "rating": { "average": 4.5, "count": 193 },
+    "description": "Whey isolate driven protein designed for lean performance and easy digestion.",
+    "highlights": ["Fast absorption", "Lean macro profile", "Rich flavour options"],
+    "nutritionFacts": {
+      "servingSize": "30g",
+      "protein": "25g",
+      "carbs": "1.5g",
+      "fat": "0.9g",
+      "calories": "113 kcal"
+    }
+  },
+  {
+    "id": "psychotic-pre-workout",
+    "name": "Psychotic Gold Pre-Workout",
+    "brand": "Insane Labz",
+    "category": "pre-workout",
+    "goal": ["endurance", "strength"],
+    "cardBgColor": "#FCEEF3",
+    "cardTextColor": "#9A1748",
+    "visualLabel": "High Stim",
+    "badges": ["TRAINING BOOST", "PUMP"],
+    "images": ["/products/pre-workout-main.jpg"],
+    "variants": [
+      { "flavour": "Fruit Punch", "size": "35 servings", "price": 2799, "mrp": 3299, "stock": 14 },
+      { "flavour": "Green Apple", "size": "35 servings", "price": 2799, "mrp": 3299, "stock": 8 }
+    ],
+    "rating": { "average": 4.3, "count": 158 },
+    "description": "Explosive energy support for heavy training days and focused workout sessions.",
+    "highlights": ["Strong caffeine hit", "Nitric support", "Performance focus"],
+    "nutritionFacts": {
+      "servingSize": "1 scoop",
+      "protein": "0g",
+      "carbs": "3g",
+      "fat": "0g",
+      "calories": "15 kcal"
+    }
+  },
+  {
+    "id": "hk-vitals-fish-oil",
+    "name": "Fish Oil Omega 3",
+    "brand": "HK Vitals",
+    "category": "vitamins-health",
+    "goal": ["recovery", "wellness"],
+    "cardBgColor": "#F4F8FF",
+    "cardTextColor": "#2C4A89",
+    "visualLabel": "Daily Wellness",
+    "badges": ["HEART HEALTH", "VALUE"],
+    "images": ["/products/fish-oil-main.jpg"],
+    "variants": [
+      { "flavour": "Softgel", "size": "60 capsules", "price": 499, "mrp": 699, "stock": 65 }
+    ],
+    "rating": { "average": 4.5, "count": 317 },
+    "description": "Daily omega support for wellness, recovery, and balanced supplementation.",
+    "highlights": ["EPA DHA blend", "Everyday supplement", "Easy to stack"],
+    "nutritionFacts": {
+      "servingSize": "1 softgel",
+      "protein": "0g",
+      "carbs": "0g",
+      "fat": "1g",
+      "calories": "10 kcal"
+    }
+  },
+  {
+    "id": "xtend-bcaa",
+    "name": "BCAA Intra Workout",
+    "brand": "Xtend",
+    "category": "amino-acids",
+    "goal": ["recovery", "endurance"],
+    "cardBgColor": "#F8F6FF",
+    "cardTextColor": "#4B2B83",
+    "visualLabel": "Hydration Support",
+    "badges": ["AMINO BLEND", "RECOVERY"],
+    "images": ["/products/bcaa-main.jpg"],
+    "variants": [
+      { "flavour": "Blue Raspberry", "size": "30 servings", "price": 2299, "mrp": 2799, "stock": 17 },
+      { "flavour": "Mango Madness", "size": "30 servings", "price": 2299, "mrp": 2799, "stock": 11 }
+    ],
+    "rating": { "average": 4.2, "count": 96 },
+    "description": "Electrolyte and amino support to help longer sessions feel smoother and better recovered.",
+    "highlights": ["BCAA ratio", "Electrolytes", "Intra-workout hydration"],
+    "nutritionFacts": {
+      "servingSize": "1 scoop",
+      "protein": "7g",
+      "carbs": "0g",
+      "fat": "0g",
+      "calories": "30 kcal"
+    }
+  }
+]
