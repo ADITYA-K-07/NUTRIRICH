@@ -78,6 +78,7 @@ export default function Gym() {
             <div className="gym-hero-media-shell">
               <AssetImage
                 src="/gym/fitness-fort-hero.jpg"
+                fallbackSrc="/gym/gym-photo-1.png"
                 alt="Fitness Fort gym"
                 className="gym-hero-image"
                 fallback={
@@ -143,7 +144,8 @@ export default function Gym() {
             {gymGallery.map((item, index) => (
               <article key={item} className="gallery-card">
                 <AssetImage
-                  src={`/gym/gym-photo-${index + 1}.jpg`}
+                  src={`/gym/gym-photo-${index + 1}.png`}
+                  fallbackSrc={`/gym/gym-photo-${index + 1}.jpg`}
                   alt={item}
                   className="gallery-image"
                   fallback={

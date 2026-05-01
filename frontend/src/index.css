@@ -1832,6 +1832,10 @@ main {
   min-height: 420px;
 }
 
+.gym-hero-image {
+  object-position: center 42%;
+}
+
 .gym-hero-fallback,
 .gallery-image-fallback {
   display: grid;
@@ -1885,6 +1889,10 @@ main {
 .gallery-image-fallback {
   width: 100%;
   min-height: 260px;
+}
+
+.gallery-image {
+  aspect-ratio: 4 / 3;
 }
 
 .gallery-copy {
