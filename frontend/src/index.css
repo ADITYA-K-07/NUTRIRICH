@@ -229,7 +229,7 @@ main {
 }
 
 .site-header {
-  position: sticky;
+  position: flex;
   top: 0;
   z-index: 40;
   backdrop-filter: blur(20px);
