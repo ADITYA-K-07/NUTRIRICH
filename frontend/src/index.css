@@ -245,10 +245,22 @@ main {
   padding: 18px 0 16px;
 }
 
+.navbar-top > *,
+.navbar-links-inner > *,
+.footer-cta > *,
+.footer-grid > * {
+  min-width: 0;
+}
+
 .brand-lockup {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  min-width: 0;
+}
+
+.brand-lockup > span:last-child {
+  min-width: 0;
 }
 
 .brand-lockup strong {
@@ -311,7 +323,7 @@ main {
   align-items: center;
   justify-content: end;
   gap: 10px;
-  min-width: max-content;
+  min-width: 0;
 }
 
 .location-pill {
@@ -416,6 +428,7 @@ main {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--line);
+  min-width: 0;
 }
 
 .search-label {
@@ -465,6 +478,7 @@ main {
   justify-content: space-between;
   gap: 14px;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .fitness-nav-link-row {
@@ -933,13 +947,14 @@ main {
   gap: 18px;
   margin-top: 16px;
   padding: 0 4px;
+  min-width: 0;
 }
 
 .hero-status {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 220px;
+  min-width: 0;
 }
 
 .hero-status span {
@@ -1996,6 +2011,10 @@ main {
   gap: 24px;
 }
 
+.footer-cta-actions {
+  min-width: 0;
+}
+
 .footer-grid h3 {
   margin: 0 0 16px;
   font-size: 0.92rem;
@@ -2073,6 +2092,11 @@ main {
     flex-wrap: wrap;
   }
 
+  .footer-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .nav-link-row {
     justify-content: flex-start;
   }
@@ -2084,8 +2108,16 @@ main {
 }
 
 @media (max-width: 920px) {
+  .navbar-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
   .experience-switch {
     order: 3;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .navbar-links {
@@ -2102,12 +2134,26 @@ main {
   }
 
   .navbar-links-inner {
+    grid-template-columns: 1fr;
     gap: 14px;
     padding: 16px 0;
   }
 
   .nav-link-row {
     justify-content: flex-start;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-controls {
+    flex-wrap: wrap;
+  }
+
+  .hero-status {
+    flex: 1 1 220px;
   }
 
   .membership-teaser-list {
@@ -2145,7 +2191,7 @@ main {
 
 @media (max-width: 680px) {
   .shell {
-    width: min(100vw - 20px, 100%);
+    width: min(100%, calc(100vw - 20px));
   }
 
   .section,
@@ -2192,11 +2238,57 @@ main {
 
   .experience-switch {
     grid-template-columns: 1fr 1fr;
+    padding: 4px;
+  }
+
+  .brand-lockup {
+    gap: 12px;
+  }
+
+  .brand-lockup small {
+    display: none;
+  }
+
+  .experience-tab {
+    min-height: 46px;
+    padding: 0 12px;
+    font-size: 0.92rem;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .location-pill,
+  .nav-pill {
+    min-height: 40px;
+    padding: 0 12px;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form button {
+    min-height: 44px;
+    padding: 0 14px;
   }
 
   .hero-controls {
     flex-direction: column;
     align-items: start;
+    padding: 0;
+  }
+
+  .hero-status,
+  .hero-arrow-group,
+  .footer-cta-actions {
+    width: 100%;
+  }
+
+  .hero-arrow-group button,
+  .footer-cta-actions .button {
+    flex: 1 1 0;
   }
 
   .hero-copy h1,
